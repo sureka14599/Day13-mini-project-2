@@ -5,7 +5,7 @@ async function searchMovie() {
     const title = document.getElementById('movieInput').value.trim();
     if (!title) return alert('Please enter a movie title');
 
-    const res = await fetch(` http://www.omdbapi.com/?i=tt3896198&apikey=fae8741c`);
+    const res = await fetch(` https://www.omdbapi.com/?i=tt3896198&apikey=fae8741c`);
     const data = await res.json();
 
     const resultDiv = document.getElementById('result');
@@ -19,4 +19,5 @@ async function searchMovie() {
     <p><strong>Plot:</strong> ${data.Plot}</p>
     <img src="${data.Poster}" alt="Poster of ${data.Title}" />
   `;
+
 }
