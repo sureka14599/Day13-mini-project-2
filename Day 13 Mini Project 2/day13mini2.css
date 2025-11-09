@@ -1,0 +1,22 @@
+ body {
+     font-family: Arial;
+     padding: 20px;
+ }
+
+ input {
+     padding: 5px;
+     width: 200px;
+ }
+
+ button {
+     padding: 5px 10px;
+ }
+
+ #result img {
+     max-width: 200px;
+     margin-top: 10px;
+ }
+
+ #result {
+     margin-top: 20px;
+ }
