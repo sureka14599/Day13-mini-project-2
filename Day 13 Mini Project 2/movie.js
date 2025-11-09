@@ -13,6 +13,20 @@ async function searchMovie() {
         resultDiv.innerHTML = `<p>Movie not found.</p>`;
         return;
     }
+ fetch(url)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+   
+  })
+  .catch(error => {
+    console.error("Fetch failed:", error);
+    alert("Unable to fetch movie data. Please check your API key and internet connection.");
+  });
 
     resultDiv.innerHTML = `
     <h3>${data.Title} (${data.Year})</h3>
@@ -21,3 +35,4 @@ async function searchMovie() {
   `;
 
 }
+
