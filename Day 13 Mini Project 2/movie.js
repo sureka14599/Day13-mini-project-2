@@ -1,4 +1,5 @@
- const apiKey = 'fae8741c'; 
+ const movieTitle = document.getElementById("movieInput").value;
+const apiKey = 'fae8741c'; 
 
 
 async function searchMovie() {
@@ -35,4 +36,5 @@ async function searchMovie() {
   `;
 
 }
+
 
